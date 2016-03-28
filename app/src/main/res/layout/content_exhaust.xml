@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_exhaust"
+    tools:context="com.example.ameet.carexhaust.ExhaustActivity"
+    android:background="@drawable/carbon_fiber"
+
+    android:weightSum="1">
+
+
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/revButton"-->
+        <!--android:src="@drawable/rev_image"-->
+        <!--android:background="@color/colorBlack"-->
+        <!--android:layout_marginBottom="60dp"-->
+        <!--android:layout_alignParentBottom="true" />-->
+
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/engineStartButton"-->
+        <!--android:src="@drawable/engine_start_image"-->
+        <!--android:background="@color/colorBlack"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<ImageButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/gpsStatusButton"-->
+        <!--android:background="@color/colorBlack"-->
+        <!--android:src="@drawable/gps_status_image"-->
+        <!--android:layout_alignLeft="@+id/engineStartButton"-->
+        <!--android:layout_alignStart="@+id/engineStartButton"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_above="@+id/revButton" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="Speed"-->
+        <!--android:textAlignment="center"-->
+        <!--android:id="@+id/speedText"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:paddingTop="15dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="20dp"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+        <!--android:text="NOT AVAILABLE"-->
+        <!--android:textAlignment="center"-->
+        <!--android:id="@+id/gpsStatusText"-->
+        <!--android:layout_alignBottom="@+id/gpsStatusButton"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_alignStart="@+id/gpsStatusButton"-->
+        <!--android:layout_alignLeft="@+id/gpsStatusButton"-->
+        <!--android:layout_alignEnd="@+id/gpsStatusButton"-->
+        <!--android:layout_alignRight="@+id/gpsStatusButton"-->
+        <!--android:layout_alignTop="@+id/gpsStatusButton"-->
+        <!--android:textColor="@color/colorWhite"-->
+        <!--android:paddingTop="35dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textSize="15dp"-->
+        <!--android:textAllCaps="true"/>-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/engineStartLight"-->
+        <!--android:src="@drawable/engine_start_light_red"-->
+        <!--android:layout_toEndOf="@+id/imageView2"-->
+        <!--android:layout_alignTop="@+id/engineStartButton"-->
+        <!--android:layout_toRightOf="@+id/imageView2" />-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:contentDescription="desc"
+        android:layout_height="80dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fadingEdge="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/imageview_with_border"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="gps status: unavailable"
+        android:id="@+id/gpsStatusText"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="gravity"
+        android:gravity="center_horizontal"
+
+        android:paddingTop="30dp"
+        android:textColor="@color/colorWhite"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="200dp"
+        android:contentDescription="desc"
+        android:layout_height="200dp"
+        android:id="@+id/engineStartButton"
+        android:background="@drawable/circular_button_background"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="engine"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/textView4"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="start"
+        android:id="@+id/textView5"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:contentDescription="desc"
+
+        android:layout_height="20dp"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:id="@+id/engineStartLight"
+        android:layout_above="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorFD0"/>
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:contentDescription="desc"
+        android:id="@+id/revButton"
+        android:background="@drawable/imageview_with_border"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:contentDescription="desc"
+
+        android:id="@+id/offButton"
+        android:background="@drawable/rev_button"
+        android:layout_alignTop="@+id/revButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="off"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/engineOffText"
+        android:layout_alignBottom="@+id/offButton"
+        android:layout_alignStart="@id/offButton"
+        android:layout_alignLeft="@id/offButton"
+        android:layout_alignEnd="@id/offButton"
+        android:layout_alignRight="@id/offButton"
+        android:paddingBottom="@dimen/fab_margin"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="rev"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/revText"
+        android:layout_alignBottom="@+id/revButton"
+        android:layout_alignStart="@id/revButton"
+        android:layout_alignLeft="@id/revButton"
+        android:layout_alignEnd="@id/revButton"
+        android:layout_alignRight="@id/revButton"
+        android:paddingBottom="@dimen/fab_margin"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No sound at constant speed"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/checkBox"
+        android:checked="false"
+        android:background="@drawable/rect"
+        android:padding="6dp"
+        android:backgroundTint="@color/color290"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/revButton"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/engineStartButton"
+        android:layout_alignStart="@+id/engineStartButton" />
+
+
+</RelativeLayout>

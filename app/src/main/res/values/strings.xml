@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CarExhaust</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_exhaust">ExhaustActivity</string>
+    <string name="name_string">Car</string>
+    <string name="name_string2">Exhaust</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="constant_speed_preference">mute at constant speed</string>
+    <string name="constant_speed_summary">do not play sound while traveling at constant speed</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+
+</resources>
